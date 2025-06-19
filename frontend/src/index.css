@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+header {
+  border-bottom: 2px solid green;
+  margin-bottom: 3%;
+}
+
+footer {
+  border-top: 2px solid green;
+  margin-top: 3%;
+}
+
+.logo {
+  font-family: "Share Tech Mono", monospace !important;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.logo:hover {
+  color: green;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.step-buttons {
+  width: 100% !important;
+}
+
+.tape-element {
+  font-size: 1.3rem;
+  min-width: 2.8rem;
+  width: auto !important;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pointed {
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: black;
+}
+
+.arrow {
+  border-bottom: 40px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  float: left;
+}
+
+.col-index {
+  width: 10px !important;
+}
+
+.destak {
+  font-weight: bolder !important;
+  color: white !important;
+  background-color: blue !important;
+}
+
+.stack-element {
+  font-size: 1.3rem;
+  width: auto;
+  min-width: 2.8rem;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.stack-card {
+  text-align: center;
+  align-items: center;
+  width: auto;
+}
+
+.loader {
+  /*background-image: url("assets/img/if-logo.png");*/
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #3fa14c;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
