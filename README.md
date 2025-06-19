@@ -171,8 +171,6 @@ Testes recomendados para validação:
 * **Teste de Sequências Inválidas:** Sequências incorretas
 * **Teste de Gramática Válida:** Gramática correta para sucesso
 
-  # Testes e Validação
-
 ## 1. Testes de Validação de Entrada
 
 ### Teste 1.1: Gramática Vazia
