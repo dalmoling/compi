@@ -170,3 +170,86 @@ Testes recomendados para validação:
 * **Teste de Símbolo Reservado:** Uso indevido do símbolo `$`
 * **Teste de Sequências Inválidas:** Sequências incorretas
 * **Teste de Gramática Válida:** Gramática correta para sucesso
+
+  1. Testes de Validação de Entrada
+Teste 1.1: Gramática Vazia
+Entrada:
+
+Gramática: " " (apenas espaço)
+Input: "a"
+Algoritmo: SLR
+
+Teste 1.2: Input Vazio
+Entrada:
+
+Gramática: "S->a."
+Input: " " (apenas espaço)
+Algoritmo: SLR
+
+2. Testes de Formato da Gramática
+Teste 2.1: Gramática sem Ponto Final
+Entrada:
+
+Gramática: "S->a"
+Input: "a"
+Algoritmo: SLR
+
+Teste 2.2: Gramática sem Símbolo "->"
+Entrada:
+
+Gramática: "Sa."
+Input: "a"
+Algoritmo: SLR
+
+3. Testes de Símbolos Não Suportados
+Teste 3.1: Uso de Colchetes
+Entrada:
+
+Gramática: "F->[E]."
+Input: "id"
+Algoritmo: SLR
+
+Teste 3.2: Parênteses Desbalanceados
+Entrada:
+
+Gramática: "F->(E."
+Input: "id"
+Algoritmo: SLR
+
+4. Testes de Símbolos Reservados
+Teste 4.1: Uso do Símbolo $
+Entrada:
+
+Gramática: "S->$."
+Input: "id"
+Algoritmo: SLR
+
+5. Testes de Sequências Inválidas
+Teste 5.1: Sequência Inválida "a("
+Entrada:
+
+Gramática: "S->a(."
+Input: "a"
+Algoritmo: SLR
+
+Teste 5.2: Sequência Inválida "($"
+Entrada:
+
+Gramática: "S->($."
+Input: "a"
+Algoritmo: SLR
+
+Teste 5.3: Sequência Inválida ";"
+Entrada:
+
+Gramática: "S->a;b."
+Input: "a"
+Algoritmo: SLR
+
+6. Testes de Prevenção de "pop from empty list"
+Teste 6.1: Gramática Complexa com Erro
+Entrada:
+
+Gramática: "E->E+T.E->T.T->T*F.T->F.F->(E).F->id."
+Input: "id + id * )"
+Algoritmo: SLR
