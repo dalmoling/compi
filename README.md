@@ -171,85 +171,83 @@ Testes recomendados para validação:
 * **Teste de Sequências Inválidas:** Sequências incorretas
 * **Teste de Gramática Válida:** Gramática correta para sucesso
 
-  1. Testes de Validação de Entrada
-Teste 1.1: Gramática Vazia
-Entrada:
+  # Testes e Validação
 
-Gramática: " " (apenas espaço)
-Input: "a"
-Algoritmo: SLR
+## 1. Testes de Validação de Entrada
 
-Teste 1.2: Input Vazio
-Entrada:
+### Teste 1.1: Gramática Vazia
 
-Gramática: "S->a."
-Input: " " (apenas espaço)
-Algoritmo: SLR
+* **Gramática:** " " (apenas espaço)
+* **Input:** "a"
+* **Algoritmo:** SLR
 
-2. Testes de Formato da Gramática
-Teste 2.1: Gramática sem Ponto Final
-Entrada:
+### Teste 1.2: Input Vazio
 
-Gramática: "S->a"
-Input: "a"
-Algoritmo: SLR
+* **Gramática:** "S->a."
+* **Input:** " " (apenas espaço)
+* **Algoritmo:** SLR
 
-Teste 2.2: Gramática sem Símbolo "->"
-Entrada:
+## 2. Testes de Formato da Gramática
 
-Gramática: "Sa."
-Input: "a"
-Algoritmo: SLR
+### Teste 2.1: Gramática sem Ponto Final
 
-3. Testes de Símbolos Não Suportados
-Teste 3.1: Uso de Colchetes
-Entrada:
+* **Gramática:** "S->a"
+* **Input:** "a"
+* **Algoritmo:** SLR
 
-Gramática: "F->[E]."
-Input: "id"
-Algoritmo: SLR
+### Teste 2.2: Gramática sem Símbolo "->"
 
-Teste 3.2: Parênteses Desbalanceados
-Entrada:
+* **Gramática:** "Sa."
+* **Input:** "a"
+* **Algoritmo:** SLR
 
-Gramática: "F->(E."
-Input: "id"
-Algoritmo: SLR
+## 3. Testes de Símbolos Não Suportados
 
-4. Testes de Símbolos Reservados
-Teste 4.1: Uso do Símbolo $
-Entrada:
+### Teste 3.1: Uso de Colchetes
 
-Gramática: "S->$."
-Input: "id"
-Algoritmo: SLR
+* **Gramática:** "F->\[E]."
+* **Input:** "id"
+* **Algoritmo:** SLR
 
-5. Testes de Sequências Inválidas
-Teste 5.1: Sequência Inválida "a("
-Entrada:
+### Teste 3.2: Parênteses Desbalanceados
 
-Gramática: "S->a(."
-Input: "a"
-Algoritmo: SLR
+* **Gramática:** "F->(E."
+* **Input:** "id"
+* **Algoritmo:** SLR
 
-Teste 5.2: Sequência Inválida "($"
-Entrada:
+## 4. Testes de Símbolos Reservados
 
-Gramática: "S->($."
-Input: "a"
-Algoritmo: SLR
+### Teste 4.1: Uso do Símbolo `$`
 
-Teste 5.3: Sequência Inválida ";"
-Entrada:
+* **Gramática:** "S->\$."
+* **Input:** "id"
+* **Algoritmo:** SLR
 
-Gramática: "S->a;b."
-Input: "a"
-Algoritmo: SLR
+## 5. Testes de Sequências Inválidas
 
-6. Testes de Prevenção de "pop from empty list"
-Teste 6.1: Gramática Complexa com Erro
-Entrada:
+### Teste 5.1: Sequência Inválida "a("
 
-Gramática: "E->E+T.E->T.T->T*F.T->F.F->(E).F->id."
-Input: "id + id * )"
-Algoritmo: SLR
+* **Gramática:** "S->a(."
+* **Input:** "a"
+* **Algoritmo:** SLR
+
+### Teste 5.2: Sequência Inválida "(\$"
+
+* **Gramática:** "S->(\$."
+* **Input:** "a"
+* **Algoritmo:** SLR
+
+### Teste 5.3: Sequência Inválida ";"
+
+* **Gramática:** "S->a;b."
+* **Input:** "a"
+* **Algoritmo:** SLR
+
+## 6. Testes de Prevenção de "pop from empty list"
+
+### Teste 6.1: Gramática Complexa com Erro
+
+* **Gramática:** "E->E+T.E->T.T->T\*F.T->F.F->(E).F->id."
+* **Input:** "id + id \* )"
+* **Algoritmo:** SLR
+
