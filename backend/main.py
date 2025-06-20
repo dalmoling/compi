@@ -12,6 +12,7 @@ from app import utils
 app = FastAPI()
 
 origins = [
+    "https://sascfrontend.vercel.app/",
     "http://localhost:3000",
     "localhost:3000",
     "http://localhost:5173",
