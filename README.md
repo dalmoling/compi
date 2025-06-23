@@ -1,6 +1,6 @@
 # Link da aplicação rodando
 
-https://sascfrontend-6svskb7sy-kelvin-lazzaris-projects.vercel.app
+https://sascfrontend.vercel.app/
 
 # Link do vídeo no Youtube
 
